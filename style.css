@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --blue:#1DABF2;
+    --blue2:#0E5173;
+    --gray:#ededed;
+}
+body p{
+    font-size: 1.4rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vw;
+    overflow-x: hidden;
+}
+
+h2, h3{
+color: var(--blue2);
+font-size: 2.5rem;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: white; 
+    z-index: 1;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.164);
+    margin-bottom: 4px;
+   
+    
+}
+ .cabecalho{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+    flex-wrap: wrap; 
+    margin: auto;    
+    z-index: 2;
+   
+    
+}
+.cabecalho p{
+    font-size: 2rem;
+    color: var(--blue2);
+    font-weight: 600;
+    cursor: pointer;
+}
+.cabecalho p:hover{
+    border-bottom: 1px solid var(--blue2); 
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+    gap: 3rem;  
+}
+.navlinks button{
+    font-size: 1em;
+    background-color: white;
+    border: 2px solid var(--blue2);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: var(--blue2);
+}
+.navlinks button:hover{
+    background-color: rgb(13, 196, 13);
+    color: white;  
+}
+.navlinks .whats{
+    padding-left: 2px;
+}
+.cabecalho .navlinks a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--blue2);
+}
+.cabecalho .navlinks a:hover{
+    border-bottom: 1px solid var(--blue2);
+}
+
+/*Main--------------------------------------*/
+
+main{
+    width: 100%;
+    margin: auto;
+}
+.container{
+    
+    width: 100%;
+    height: 70vh;
+    position:relative ;
+    z-index: 0;
+}
+.img-wrapper{
+    background-color: rgb(2, 17, 44);
+    width: 100%;
+    height: 100%;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.txt-eu{
+    position:absolute; 
+    top: 22%;
+    right: 7%;
+    color: #0E5173;
+    font-weight: bold;
+    text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.637);
+    line-height: 2.5rem;
+}
+.txt-eu button{
+    margin-top: 10px;
+    width: 12rem;
+    margin-left: 22%;
+    background: #00B4DB;  
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  
+    background: linear-gradient(to right, #0083B0, #00B4DB); 
+    color: white;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: .4rem;
+    padding-bottom: .3rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: 600;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.txt-eu button:hover{
+    background-color: white;
+    color: var(--blue2);
+    border: var(--blue);
+}
+.txt-eu p:nth-child(2){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.txt-eu p:nth-child(1){
+    font-size: 1.8rem;
+}
+.txt-eu p:nth-child(3){
+    font-size: 1.6rem;
+}
+/*segunda parte---------------------------------------*/
+
+.sobre-mim{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.segunda-part h2{
+    background-color: rgb(255, 255, 255);
+    width: 22rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);  
+    font-size: 2.5rem; 
+}
+.artg .eu{
+    width: 18rem;
+    display: flex;
+    margin: auto;
+    margin-right: 100px;
+    border-radius: 10px;
+    box-shadow: -0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.363);
+    background-color: #0E5173;
+}
+.artg{
+    
+    padding-top: 100px;  
+    width: 80%;
+    display: flex;  
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+.artg p{
+    width: 50%;
+    color: grey;
+    text-align: justify;
+    padding-top: 15px;
+    display: flex;
+    margin-right: 50px;
+    font-size: 1.4rem;   
+      
+}
+
+/* portifolio----------------------*/
+.portifa{
+    padding-top: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.portifa h3{
+    background-color: rgb(255, 255, 255);
+    width: 35rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164); 
+    font-size: 2.5rem;  
+}
+.portifa p{
+    width: 50%;
+    margin: auto;
+    color: grey;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.content1 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.219);
+}
+.main-button{
+    display: flex;
+    gap: 20%;
+    flex-wrap: wrap;
+}
+.main-button button{
+    width: 25rem;
+    height: 5rem;
+    font-size: 2.5em;
+    border-radius: 10px;
+    border: 2px solid var(--blue2);
+    background-color: white;
+    color: var(--blue2);  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.main-button button:hover{
+    background-color: var(--blue);
+    color: white;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.397);
+    
+}
+
+.main-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;   
+}
+
+/*contato -----------------------------*/
+
+.cabecalho-contato {
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);
+    margin-top: 60px;
+
+}
+.main-contato{
+    width: 100%;
+    margin-top: 80px;
+    
+
+}
+
+
+.main-contato p{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.637);
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    
+}
+.container-contato{
+    padding-top: 50px;
+    width: 100%;
+    height: 30rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+    
+.caixas{
+    display: flex;
+    width: 88%;
+    height: 24rem;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.caixa1{
+    background-color: white;
+    color: var(--blue2);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 0px 5px rgb(0 0 0 / 16%);
+    padding-top: 3rem;
+}
+.caixa1 #email, #mundo, #user{
+    color: var(--blue2);
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+   
+.main-serviços{
+    width: 100%;
+    margin-top: 80px;
+}
+.main-serviços h3{
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);
+}
+.main-serviços p{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.637);
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    
+}
+
+.container-serviços{
+    padding-top: 50px;
+    width: 100%;
+    height: 24rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+    
+.box{
+    display: flex;
+    width: 88%;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.caixa2{
+    background-color: white;
+    color: var(--blue2);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 0px 5px rgb(0 0 0 / 16%);
+    padding-top: 3rem;
+    
+
+
+
+}
+.caixa2 #js, #CSS, #html{
+    color: var(--blue2);
+    padding-bottom:3rem;
+    font-size: 2.5rem;
+}
+
+ footer {
+    background-color: white;
+    color: #0E5173;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.527);
+   
+}
+
+@media (max-width:1095px){
+    
+        header{
+            height: 80px;
+        }
+        
+    
+        .cabecalho{
+            
+            display: inline;
+        }
+        .cabecalho p{
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .navlinks{
+            gap: 1rem;
+            width: 100%;
+        }
+        .navlinks li{
+            text-align: center;
+            font-size: 0.7rem;
+            margin: auto;
+        }
+        .artg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .artg .eu{
+            margin-right: 0px;
+            display: flex;
+            margin: auto;
+            
+        }
+        .artg p{
+            margin-right: 0px;
+            width: 100%;
+        }
+        .portifa p{
+            width: 100%;
+           text-align: justify;
+        }
+        .caixa1 #email, #mundo, #user{
+            padding-bottom: 1rem;
+        }
+        .caixa2 #js, #html, #css{
+            padding-bottom: 1rem;
+        }
+        .caixa2, .caixa1{
+            padding-bottom: 3rem;
+        }
+        .box, .caixas{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 50px;   
+        }
+        .main-serviços{
+            margin-top: 5rem;
+        }
+        .main-serviços p, .main-contato p{
+            margin-bottom: 5px;
+        }
+        .container-serviços, .container-contato{
+            
+            height: 50rem;
+            align-items: center;   
+        }
+        .container-contato{
+            margin-bottom: 6rem;
+        }
+        .main-button{
+            gap: 2%;}
+
+
+      
+        }     
+    @media (max-width:680px){
+
+
+        .txt-eu{
+            right: 8%
+            
+            
+        }
+        .txt-eu p:nth-child(2){
+            font-size: 2.3rem;
+    
+        }
+        .txt-eu p:nth-child(1){
+            font-size: 1.5rem;
+        }
+        .txt-eu p:nth-child(3){
+            font-size: 1.1rem;
+        }
+        .txt-eu button{
+            padding-bottom: 0.3rem;
+        }
+        .navlinks{
+            width: 90%;
+            margin: auto;
+        }
+        .sobre-mim{
+            padding-bottom: 20px;
+            padding-top: 40px;
+        }
+        .artg{
+            padding-top: 50px;
+        }
+        .portifa h3{
+            width: 70%;
+            font-size: 1.5rem;
+            height: 50px;
+        }
+        .artg .eu{
+            margin-bottom: 30px;
+        }
+        .main-button{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .main-button button{
+            width: 15rem;
+            font-size: 1.5rem;
+        }
+        .main-contato p {
+            font-size: 1.5rem;
+        }
+
+    }
+
+        @media (max-width:520px){
+            .img-wrapper{
+                display: none;
+                
+            }
+            .container{
+                background-color: rgb(0, 0, 19);
+            }
+            .imgpeq{
+                width: 100vw;
+                height: 100%;
+                background-color: rgb(0, 2, 5);
+                background-image: url(back8.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+            }
+
+            .segunda-part h2{
+                font-size: 2rem;
+               width: 250px;
+            }
+            .portifa h3{
+                width: 300px;
+                font-size: 1.4rem;
+                height: 50px;
+            }
+            body p{
+                font-size:1.2rem;
+            }
+            .artg p{
+                font-size: 1.2rem;
+                
+            }
+            .main-serviços h3{
+                font-size: 1.9rem;
+            }
+            .main-serviços p{
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width:425px){
+        
+        .navlinks li{
+            font-size: 0.6rem;
+            padding-top: 3px;
+    
+        }
+        header{
+            height: 80px;
+        }
+        .navlinks .whats{
+            font-size: 0.4rem;
+        }
+        .cabecalho p{
+            margin-top: .2rem;
+                
+        }
+    }
+        
+    
+      
+    @media (max-width:379px){
+        header{
+            height: 80px;
+        }
+        .navlinks .whats{
+            font-size: 0.2rem;
+        }
+        .cabecalho p{
+            margin-top: .2rem;
+                
+        }
+    
