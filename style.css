@@ -48,7 +48,7 @@ header{
     
 }
 .cabecalho p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--blue2);
     font-weight: 600;
     cursor: pointer;
@@ -57,9 +57,16 @@ header{
     border-bottom: 1px solid var(--blue2); 
 }
 .navlinks{
+    font-size: 1rem;
     display: flex;
     list-style: none;
-    gap: 3rem;  
+    gap: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 5px;
+    
 }
 .navlinks button{
     font-size: 1em;
@@ -71,6 +78,7 @@ header{
     cursor: pointer;
     transition-duration: 0.4s;
     color: var(--blue2);
+
 }
 .navlinks button:hover{
     background-color: rgb(13, 196, 13);
@@ -88,7 +96,7 @@ header{
     border-bottom: 1px solid var(--blue2);
 }
 
-/*Main--------------------------------------*/
+/*---------MENU----------*/
 
 main{
     width: 100%;
@@ -107,6 +115,7 @@ main{
     height: 100%;
     min-width: 320px; 
     max-width: 1400px;  
+    
 }
 .img-wrapper img{
     width: 100%;
@@ -130,6 +139,7 @@ main{
     font-weight: bold;
     text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.637);
     line-height: 2.5rem;
+
 }
 .txt-eu button{
     margin-top: 10px;
